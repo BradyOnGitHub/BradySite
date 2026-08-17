@@ -3,178 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brady Glynn OFFICIAL Site</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background-color: #fdf6e3;
-      padding: 20px;
-    }
-    header {
-      max-width: 1200px;
-      margin: 0 auto 30px auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #e8dcae;
-      padding-bottom: 15px;
-    }
-    header h1 {
-      font-size: 1.8em;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #444;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #b8860b;
-    }
-
-    /* Page layout: side gif rail + main content + side gif rail */
-    .page-layout {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-    }
-
-    .side-gifs {
-      flex: 0 0 180px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      position: sticky;
-      top: 20px;
-    }
-
-    .side-gifs img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      border: 1px solid #e8dcae;
-    }
-
-    /* Hide side gif rails on narrow screens so content stays readable */
-    @media (max-width: 900px) {
-      .side-gifs {
-        display: none;
-      }
-    }
-
-    main {
-      flex: 1 1 auto;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    section h2 {
-      margin-bottom: 10px;
-      color: #333;
-    }
-    .intro {
-      background-color: #fffbe9;
-      border: 1px solid #e8dcae;
-      border-radius: 8px;
-      padding: 20px;
-    }
-    .intro-gif {
-      display: block;
-      max-width: 250px;
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-      margin: 15px 0;
-      border: 1px solid #e8dcae;
-    }
-    .links a {
-      display: inline-block;
-      margin-right: 15px;
-      color: #b8860b;
-      text-decoration: none;
-    }
-    .links a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      max-width: 1200px;
-      margin: 40px auto 0 auto;
-      font-size: 0.9em;
-      color: #666;
-      text-align: center;
-      border-top: 1px solid #e8dcae;
-      padding-top: 15px;
-    }
-  </style>
+  <title>Brady Glynn Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="indexstyle.css">
 </head>
 <body>
-  <header>
-    <h1>Brady Glynn OFFICIAL Site</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="about.html">More About Me</a>
-    </nav>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo">Brady Glynn</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="page-layout">
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <div class="wrap">
+      <p class="eyebrow"></p>
+      <h1>Brady Glynn</h1>
+      <p class="hero-tagline">AI Engineer</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Left side gif rail -->
-    <aside class="side-gifs">
-      <!-- Replace src with your own direct .gif link -->
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzJmbXE1ZGxidmo0eHIyMmN2MDN4MWczNnJ3cjFlbHh6NHFtMjR3eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/k1nQG140kYnqXHb9ix/giphy.gif" alt="Decorative gif">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTBjaW9iZGNxcGJrc2hja3BnZ3MzdHRreHZienc5NnF2Z2wwaG56cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IfPE0x5gfa5ctKpph6/giphy.gif" alt="Decorative gif">
-    </aside>
-
-    <main>
-      <section id="about" class="intro">
-        <h2>Hi, I'm Your Name</h2>
-        <p>Welcome to my little corner of the internet. I'm a [your role/interest] who loves [your interests]. This is where I share what I'm working on. \n Word of the day: fescue</p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>A short list of things you've built or worked on:</p>
-        <ul>
-          <li>Project One — a brief description</li>
-          <li>Project Two — a brief description</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Get in Touch</h2>
-        <div class="links">
-          <a href="mailto:you@example.com">Email</a>
-          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-          <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <h2>About</h2>
+        <p>
+          Computer Science graduate with specialty in artificial intelligence and machine learning. 
+          Experience in software engineering, building machine learning models, and deploying them 
+          for agentic workflows along with using models to solve real world problems. Looking to apply 
+          and expand my knowledge in the field.
+        </p>
+        <p>
+          I have strong skills in Python and Java, including Pytorch and Numpy libraries. I have 
+          also worked with many coding tools and techniques.
+        </p>
+      </div>
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-label">Based in</span>
+          <span class="fact-value">Seattle, WA</span>
         </div>
-      </section>
-    </main>
+        <div class="fact">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">Python, Java, C, C++</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Large Data Skills</span>
+          <span class="fact-value">SQL, Apache MapReduce</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Programming Skills</span>
+          <span class="fact-value">Parallel Programming (CUDA), REST APIs, OOP</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Real Skills</span>
+          <span class="fact-value">Billiards (I will beat you)</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Right side gif rail -->
-    <aside class="side-gifs">
-      <!-- Replace src with your own direct .gif link -->
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenA0bjdjMWRjNTdnNjRnc3pmdnB6d2k3cDM1cDdtdGQ1NDA3djJraiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KkkfClXBfpM0uIOZkm/giphy.gif" alt="Decorative gif">
-      <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXJocm5oa3gwaml1dmxsMnZ5ODMzMHIyeTlxcjZpeTdzY2U3bzQ0OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e8DozfzO53Q1TPUr6B/giphy.gif" alt="Decorative gif">
-    </aside>
+  <!-- Work -->
+  <section id="work" class="section section-alt">
+    <div class="wrap">
+      <h2>Some of my work</h2>
+      <div class="project-grid">
 
-  </div>
+        <article class="project-card">
+          <div class="project-thumb1" aria-hidden="true"></div>
+          <h3>Brady's Dictionary</h3>
+          <p>A fully deployed quizing tool for learning language. Uses LLMs for word selection and fake definitions</p>
+          <a href="bradysdictionary.html" class="project-link">Try it! &rarr;</a>
+        </article>
 
-  <footer>
-    <p>&copy; 2026 Your Name</p>
+        <article class="project-card">
+          <div class="project-thumb2" aria-hidden="true"></div>
+          <h3>PromoGoat</h3>
+          <p>Worked with the team at Artemis Intelligence to create this tool that turns business ideas into pitch decks</p>
+          <a href="https://promogoat.ai" class="project-link">See Website &rarr;</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb3" aria-hidden="true"></div>
+          <h3>Bionformatics Research</h3>
+          <p>An analysis of machine learning models for their effectivness at finding motifs in the Arabidopsis genome</p>
+          <a href="https://github.com/BradyOnGitHub/BioInformatics/blob/main/cs525_project_brady_shoning_hinderer.ipynb" class="project-link">View project &rarr;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="contact-text">
+        Please reach out to me via email :)
+      </p>
+      <a href="mailto:bradysglynn@gmail.com" class="btn btn-primary">bradysglynn@gmail.com</a>
+      <div class="social-links">
+        <a href="https://github.com/BradyOnGitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/brady-glynn-473033216/">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Brady Glynn</p>
+    </div>
   </footer>
+
   <script>
-    // Your JavaScript goes here
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
