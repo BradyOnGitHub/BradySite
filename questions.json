@@ -1,0 +1,102 @@
+[
+  {
+    "question": "néant",
+    "choices": [
+      "slap on the cheek",
+      "hatred; hate",
+      "to devastate, overwhelm",
+      "nothingness, void, emptiness"
+    ],
+    "answer": "nothingness, void, emptiness"
+  },
+  {
+    "question": "écriteau",
+    "choices": [
+      "seed (fertilized grain)",
+      "sign, notice",
+      "(intransitive) to suffer",
+      "to crawl, worm (along); to creep"
+    ],
+    "answer": "sign, notice"
+  },
+  {
+    "question": "balade",
+    "choices": [
+      "walk without purpose, stroll",
+      "(chiefly literary) others; other people; someone else",
+      "ecstasy (sentiment)",
+      "ordinary"
+    ],
+    "answer": "walk without purpose, stroll"
+  },
+  {
+    "question": "jeûner",
+    "choices": [
+      "painting",
+      "(intransitive) to fast; to go without food",
+      "okra",
+      "stay, visit, sojourn"
+    ],
+    "answer": "(intransitive) to fast; to go without food"
+  },
+  {
+    "question": "couronner",
+    "choices": [
+      "(ankle) boot",
+      "to crown",
+      "imaginary (created by and existing only in the imagination)",
+      "favour"
+    ],
+    "answer": "to crown"
+  },
+  {
+    "question": "ragot",
+    "choices": [
+      "small, stunted",
+      "virtue",
+      "oyster",
+      "accidental (happening by chance)"
+    ],
+    "answer": "small, stunted"
+  },
+  {
+    "question": "ressaisir",
+    "choices": [
+      "(transitive) to regain or recover (that which was lost)",
+      "electrician",
+      "ritual",
+      "bottling"
+    ],
+    "answer": "(transitive) to regain or recover (that which was lost)"
+  },
+  {
+    "question": "faîte",
+    "choices": [
+      "guide person",
+      "top, summit, pinnacle",
+      "(transitive, administration) to sit (hold a seat)",
+      "delivery"
+    ],
+    "answer": "top, summit, pinnacle"
+  },
+  {
+    "question": "palier",
+    "choices": [
+      "hole (place where a prisoner is kept in solitary confinement)",
+      "twin",
+      "(mechanics) bearing",
+      "seal (pattern; design)"
+    ],
+    "answer": "(mechanics) bearing"
+  },
+  {
+    "question": "voûte",
+    "choices": [
+      "Hindu",
+      "to breathe in",
+      "(architecture) arch",
+      "(transitive) to reroute, derail (cause to change path)"
+    ],
+    "answer": "(architecture) arch"
+  }
+]
